@@ -114,16 +114,53 @@ print("Площадь квадрата равна", int(b) * int(c))
 На ипотеку было потрачено: 360000 рублей
 Было накоплено: 240000 рублей
 ```
+Решение:
+```py
+while True:
+  wages = input("Введите заработную плату в месяц: ")
+  try:
+    wages = int(wages)
+    if wages > 0:
+      break
+    else:
+      print("Введите положительное число ")
+  except ValueError:
+    print("Введите число")
 
+while True:
+  percent_mortgage = input("Какой процент(%) от зп уходит на ипотеку: ")
+  try:
+    percent_mortgage = int(percent_mortgage)
+    if percent_mortgage > 0:
+      break
+    else:
+      print("Введите положительное число")
+  except ValueError:
+    print("Введите число")
+
+while True:
+  percent_life = input("Введите, какой процент(%) уходит на жизнь: ")
+  try:
+    percent_life = int(percent_life)
+    if percent_life > 0:
+      break
+    else:
+      print("Введите положительное число")
+  except ValueError:
+    print("Введите число")
+all_money = wages * 12
+all_mortgage = all_money * percent_mortgage / 100
+all_life = all_money * percent_life / 100
+print("На ипотеку было потрачено: ", ("{:.0f}".format(all_mortgage)), "рублей")
+print("Было накоплено: ",
+      ("{:.0f}".format(all_money - all_mortgage - all_life)), "рублей")
+```
+```
+Введите заработную плату в месяц: 110000
+Какой процент(%) от зп уходит на ипотеку: 30
+Введите, какой процент(%) уходит на жизнь: 60
+На ипотеку было потрачено:  396000 рублей
+Было накоплено:  132000 рублей
+```
 ---
-Инструкция по выполнению домашнего задания:
 
-1. Зарегистрируйтесь на сайте [Repl.IT](https://repl.it/).
-2. Перейдите в раздел **my repls**.
-3. Нажмите кнопку **Start coding now!**, если приступаете впервые, или **New Repl**, если у вас уже есть работы.
-4. В списке языков выберите Python.
-5. Код пишите в левой части окна.
-6. Посмотреть результат выполнения файла можно, нажав на кнопку **Run**. Результат появится в правой части окна.
-
-
-*Никаких файлов прикреплять не нужно.*
