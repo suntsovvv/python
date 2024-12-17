@@ -4,7 +4,8 @@
 ## Задача №1
 Задачи на [hackerrank](https://www.hackerrank.com/domains/python):  
 Решить задачу на hackerrank ["Python If-Else"](https://www.hackerrank.com/challenges/py-if-else/problem).  
-![image](https://github.com/user-attachments/assets/cfeefb9b-2932-4171-9815-752210068d83)
+![image](https://github.com/user-attachments/assets/d7e279a8-ea3f-4b68-8577-24b6cd1f291d)
+https://www.hackerrank.com/profile/suntsovvv
 
 
 ## Задача №2
